@@ -1,4 +1,4 @@
-indian-sleek
-============
+indian_minimalist
+=================
 
-Code that powers dushi.co.uk
+A mobile first clean simple minimalistic responsive one-column wordpress theme
