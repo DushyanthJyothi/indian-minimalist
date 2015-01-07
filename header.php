@@ -34,38 +34,5 @@
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
-		<div class="site-header-nav-wrapper">
-			<div id="header-main-toggle" class="spinner" title="Toggle Menu Options"><div class="bouncer1 animation"></div><div class="bouncer2 animation"></div><div class="bouncer3 animation"></div></div>
-			<div id="header-toggles" class="toggles">
-				<div id="menu-toggle" class="toggle" title="<?php esc_attr_e( 'Menu', 'indian_minimalist' ); ?>"><span class="screen-reader-text"><?php _e( 'Menu', 'indian_minimalist' ); ?></span></div>
-				<div id="sidebar-toggle" class="toggle" title="<?php esc_attr_e( 'Widgets', 'indian_minimalist' ); ?>"><span class="screen-reader-text"><?php _e( 'Widgets', 'indian_minimalist' ); ?></span></div>
-				<div id="search-toggle" class="toggle" title="<?php esc_attr_e( 'Search', 'indian_minimalist' ); ?>"><span class="screen-reader-text"><?php _e( 'Search', 'indian_minimalist' ); ?></span></div>
-				<?php if ( has_nav_menu( 'social' ) ) : ?>
-					<div id="social-links-toggle" class="toggle" title="<?php esc_attr_e( 'Social Links', 'sorbet' ); ?>"><span class="screen-reader-text"><?php _e( 'Social Links', 'sorbet' ); ?></span></div>
-				<?php endif; ?>
-			</div><!-- #toggles  -->
-			<div id="toggle-nav-panels" class="panels">
-				<div id="menu-toggle-nav" class="panel">
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-					</nav><!-- #site-navigation -->
-				</div>
-
-				<?php get_sidebar( 'header' ); ?>
-
-				<div id="search-toggle-nav" class="panel">
-					<div class="search-wrapper">
-						<?php get_search_form(); ?>
-					</div>
-				</div>
-
-				<?php if ( has_nav_menu( 'social' ) ) : ?>
-					<div id="social-links-toggle-nav" class="panel">
-						<?php wp_nav_menu( array( 'theme_location' => 'social', 'depth' => 1, 'link_before' => '<span class="screen-reader-text">', 'link_after' => '</span>', 'container_class' => 'social-links', ) ); ?>
-					</div>
-				<?php endif; ?>
-			</div><!-- #toggle-nav-panels  -->
-
-		</div><!-- #site-header-menu-wrapper -->
 	</header><!-- #masthead -->
 <div id="content" class="site-content">

@@ -22,9 +22,6 @@ get_header(); ?>
 							<?php indian_minimalist_posted_on(); ?>
 						</div><!-- .entry-meta-post -->
 						<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
-						<div class="entry-meta-author">
-							<?php indian_minimalist_posted_by(); ?>
-						</div><!-- .entry-meta-author -->
 						<div class="entry-meta-links">
 							<?php indian_minimalist_image_full_size_link(); ?>
 							<?php indian_minimalist_parent_post_link(); ?>

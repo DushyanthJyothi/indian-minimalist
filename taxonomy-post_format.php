@@ -9,7 +9,7 @@
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
- * @package Indian_minimalist
+ * @package Indian-minimalist
  *
  */
 
@@ -44,7 +44,7 @@ get_header(); ?>
 						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
 							_e( 'Galleries', 'indian_minimalist' );
 
-						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
+						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
 							_e( 'Chats', 'indian_minimalist' );
 
 						else :

@@ -14,9 +14,8 @@ function indian_minimalist_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
 		'container'      => 'main',
 		'footer'         => 'content',
-		'type'           => 'click',
+		'type'           => 'scroll',
 	) );
 
 }
 add_action( 'after_setup_theme', 'indian_minimalist_jetpack_setup' );
-

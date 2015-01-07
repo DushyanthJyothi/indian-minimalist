@@ -21,14 +21,11 @@ $formats = get_theme_support( 'post-formats' );
 			<?php indian_minimalist_posted_on(); ?>
 		</div><!-- .entry-meta-post -->		
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-		<div class="entry-meta-author">
-			<?php indian_minimalist_posted_by(); ?>
-		</div><!-- .entry-meta-author -->
 	</header><!-- .entry-header -->
 
 	<?php if ( '' != get_the_post_thumbnail() && 'image' == $format ) : ?>
 		<figure class="entry-thumbnail">
-			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'index-thumb' ); ?></a>
+			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail('thumbnail'); ?></a>
 		</figure>
 	<?php endif; ?>
 
@@ -55,8 +52,6 @@ $formats = get_theme_support( 'post-formats' );
 			<span class="tags-links"><?php printf( __( '%1$s', 'indian_minimalist' ), $tags_list ); ?></span>
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if is_single ?>
-	
-		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?><span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'indian_minimalist' ), __( '1 Comment', 'indian_minimalist' ), __( '% Comments', 'indian_minimalist' ) ); ?></span><?php endif; ?>
 
 		<?php edit_post_link( __( 'Edit', 'indian_minimalist' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
