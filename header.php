@@ -10,6 +10,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<meta name="google-site-verification" content="ngR-8Zp9jS-8ka4SUQoWEuBQS4MKL3ADtqbZn8W739Q" />
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
@@ -20,6 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php include_once("analyticstracking.php") ?>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">

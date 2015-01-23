@@ -12,8 +12,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-
-
+		<div class="site-footer-bar"></div>
 		<div class="site-footer-nav-wrapper">
 				<div id="search-toggle-nav" class="panel">
 					<div class="search-wrapper">
@@ -32,7 +31,7 @@
 				<?php endif; ?>
 		</div><!-- #site-footer-menu-wrapper -->
 		<div class="site-info">
-			&copy; Dushyanth Jyothi 2004-2014.
+			&copy; Dushyanth Jyothi 2004-2015.
 			<span class="sep"> | </span>
 			<?php printf( __( 'Theme %1$s by %2$s.', 'indian_minimalist' ), '<a href="https://github.com/DushyanthJyothi/indian-minimalist">Indian-minimalist</a>', '<a href="http://dushi.co.uk/" rel="designer">Dushyanth Jyothi</a>' ); ?>
 		</div><!-- .site-info -->

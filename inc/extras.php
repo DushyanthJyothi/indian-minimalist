@@ -87,3 +87,5 @@ function indian_minimalist_setup_author() {
 	}
 }
 add_action( 'wp', 'indian_minimalist_setup_author' );
+
+ 

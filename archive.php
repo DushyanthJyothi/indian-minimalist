@@ -43,26 +43,22 @@ get_header(); ?>
 				?>				
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php
+					// Start the Loop.
+					while ( have_posts() ) : the_post();
+			
+						indian_minimalist_get_post_titiles_only();
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+					endwhile;
+					// Previous/next page navigation.
+					indian_minimalist_paging_nav();
 
-			<?php endwhile; ?>
+				else :
+					// If no content, include the "No posts found" template.
+					get_template_part( 'content', 'none' );
 
-			<?php indian_minimalist_paging_nav(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
+				endif;
+			?>
 
 
 		</main><!-- #main -->

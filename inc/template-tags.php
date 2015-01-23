@@ -256,3 +256,19 @@ function indian_minimalist_comment( $comment, $args, $depth ) {
 }
 endif; // ends check for indian_minimalist_comment()
 
+
+function indian_minimalist_get_post_titiles_only() {
+	$formats = get_theme_support( 'post-formats' );
+	$format = get_post_format();
+?>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<header class="entry-header">
+				<div class="entry-meta-post">
+					<?php indian_minimalist_posted_on(); ?>
+				</div><!-- .entry-meta-post -->		
+				<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			</header><!-- .entry-header -->
+		</article><!-- #post-## -->
+<?php 
+}
+

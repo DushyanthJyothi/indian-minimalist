@@ -87,7 +87,7 @@ function indian_minimalist_admin_header_style() {
 		#desc {
 		}
 		#headimg h1 {
-			font-family: "PT Serif", Georgia, Times, serif;
+			font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 			font-size: 23px;
 			font-style: normal;
 			font-weight: 300;
@@ -98,7 +98,7 @@ function indian_minimalist_admin_header_style() {
 			text-decoration: none;
 		}
 		#desc {
-			font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+			font-family: 'Helvetica Neue', Arial, sans-serif;
 			font-size: 15px;
 			font-style: normal;
 			font-weight: 300;

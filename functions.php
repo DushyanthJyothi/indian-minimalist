@@ -54,12 +54,6 @@ function indian_minimalist_setup() {
 	/* default Post Thumbnail dimensions (cropped)
 	*  But effective only at browser side
 	*/
-	set_post_thumbnail_size( 150, 150, true );
-
-	// additional image sizes
-	// delete the next line if you do not need additional image sizes, effective only during media upload process
-	add_image_size( 'index-thumb', 150, 150, true ); 
-	
 
 	// This theme uses wp_nav_menu() in one location.	
 	register_nav_menus( array(
@@ -129,10 +123,9 @@ add_action( 'widgets_init', 'indian_minimalist_widgets_init' );
 function indian_minimalist_scripts() {
 	wp_enqueue_style( 'indian_minimalist-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'indian_minimalist-roboto' );
-	wp_enqueue_style( 'indian_minimalist-pt-serif' );
+	wp_enqueue_style( 'indian_minimalist-open-sans' );
 
-	wp_enqueue_style( 'indian_minimalist-genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.3' );
+	wp_enqueue_style( 'indian_minimalist-genericons', get_template_directory_uri() . '/genericons/genericons/genericons.min.css', array(), '3.0.3' );
 
 	wp_enqueue_script( 'indian_minimalist-init', get_template_directory_uri() . '/js/init.js', array( 'jquery' ), '20120206', true );
 
@@ -145,8 +138,6 @@ function indian_minimalist_scripts() {
 	if ( is_singular() && wp_attachment_is_image() ) {
 		wp_enqueue_script( 'indian_minimalist-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20130402' );
 	}
-
-
 }
 add_action( 'wp_enqueue_scripts', 'indian_minimalist_scripts' );
 
@@ -186,21 +177,13 @@ function indian_minimalist_google_fonts() {
 	/*	translators: If there are characters in your language that are not supported
 		by Source Sans Pro, translate this to 'off'. Do not translate into your own language. */
 
-	if ( 'off' !== _x( 'on', 'Roboto font: on or off', 'indian_minimalist' ) ) {
+	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'indian_minimalist' ) ) {
 
-		wp_register_style( 'indian_minimalist-roboto', "$protocol://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic" );
-
-	}	
-
-	/*	translators: If there are characters in your language that are not supported
-		by PT Serif, translate this to 'off'. Do not translate into your own language. */
-
-	if ( 'off' !== _x( 'on', 'PT Serif font: on or off', 'indian_minimalist' ) ) {
-
-		wp_register_style( 'indian_minimalist-pt-serif', "$protocol://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic" );
-
+		wp_register_style( 'indian_minimalist-open-sans', "$protocol://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300" );
 	}
+
 }
+
 add_action( 'init', 'indian_minimalist_google_fonts' );
 
 /**
@@ -227,7 +210,7 @@ function indian_minimalist_mce_css( $mce_css ) {
 
 	$protocol = is_ssl() ? 'https' : 'http';
 
-	$font = "$protocol://fonts.googleapis.com/css?family=Roboto:300,400,700,300italic,400italic,700italic&subset=latin,latin-ext|Roboto:400,700,400italic,700italic&subset=latin,latin-ext";
+	$font = "$protocol://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,400italic,900";
 
 	if ( empty( $font ) )
 		return $mce_css;
