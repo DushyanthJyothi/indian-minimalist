@@ -20,7 +20,7 @@ $formats = get_theme_support( 'post-formats' );
 		<div class="entry-meta-post">
 			<?php indian_minimalist_posted_on(); ?>
 		</div><!-- .entry-meta-post -->		
-		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 
 	<?php if ( '' != get_the_post_thumbnail() && 'image' == $format ) : ?>

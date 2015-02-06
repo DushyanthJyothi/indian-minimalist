@@ -92,6 +92,7 @@ if ( ! function_exists( 'indian_minimalist_posted_on' ) ) :
  * Prints HTML with meta information for the current posted-on/time and author.
  */
 function indian_minimalist_posted_on() {
+	/*
 	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
@@ -103,6 +104,14 @@ function indian_minimalist_posted_on() {
 			$time_string
 		)
 	);
+	*/
+
+	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
+	$time_string = sprintf( $time_string,
+		esc_attr( get_the_date( 'c' ) ),
+		esc_html( get_the_date() ) 
+	);
+	printf('<span class="posted-on">%1$s</span>',$time_string);
 }
 endif;
 

@@ -14,10 +14,10 @@
  */
 function indian_minimalist_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'indian_minimalist_custom_header_args', array(
-		'default-image'          => get_stylesheet_directory_uri() . '/images/theme_header.jpg',
-		'default-text-color'     => '#333333',
-		'width'                  => 80,
-		'height'                 => 80,
+		'default-image'          => get_stylesheet_directory_uri() . '/images/avatar.jpg',
+		'default-text-color'     => '#696969',
+		'width'                  => 100,
+		'height'                 => 100,
 		'flex-height'            => false,
 		'flex-width'             => false,
 		'wp-head-callback'       => 'indian_minimalist_header_style',

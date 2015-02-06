@@ -19,7 +19,7 @@ get_header(); ?>
 				<div class="entry-meta-post">
 					<?php indian_minimalist_posted_on(); ?>
 				</div><!-- .entry-meta-post -->		
-				<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+				<h1 class="entry-title"><?php the_title(); ?></h1>
 			</header><!-- .entry-header -->
 
 			<div class="entry-content">

@@ -1,66 +1,57 @@
+/*
+Welcome to Custom CSS!
+
+CSS (Cascading Style Sheets) is a kind of code that tells the browser how
+to render a web page. You may delete these comments and get started with
+your customizations.
+
+By default, your stylesheet will be loaded after the theme stylesheets,
+which means that your rules can take precedence and override the theme CSS
+rules. Just write here what you want to change, you don't need to copy all
+your theme's stylesheet content.
+*/
+
 /* infinite-scroll */
 #infinite-handle {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     clear: both;
     float: none;
     margin: 0 auto;
+    margin-bottom: 2rem;
     text-align: center;
 }
-
 #infinite-handle span{
+    vertical-align: baseline;
+    vertical-align: middle; 
+    font-family: inherit;
+    line-height: inherit;     
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5; 
+    color: #343434;
+    background-color: #FFFFFF;   
     clear: both;
     float: none;
     margin: 0 auto;
     max-width: 100%;
-    font-size: 18px;
-    font-size: 1.8rem;
-    line-height: 2;
 }
 #infinite-handle span {
-    cursor: pointer;    
-    overflow: visible;
-    text-transform: none;
-    margin: 0;
-    padding: 0.3rem 1.6rem;
-    font-weight: 400;
     text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    padding: 1rem 1.6rem;
     background-image: none;
-    color: #333333;
-    background-color: #FFFFFF;
     border: 0.1rem solid #C5C5C5;
+    outline: 0;
     border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
 }
-#infinite-handle span:focus, 
-#infinite-handle span:active:focus {
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
-}
-#infinite-handle span:hover, 
-#infinite-handle span:focus {
-    color: #333333;
-    text-decoration: none;
-}
-#infinite-handle span:active{
-    outline: 0;
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-}
 #infinite-handle span:hover, 
 #infinite-handle span:focus, 
-#infinite-handle span:active{
-    color: #333333;
+#infinite-handle span:active {
+    color: #343434;
     background-color: #F5F5F5;
     border-color: #C5C5C5;
+    outline: 0;
 }
 .spinner {
     clear: both;
@@ -80,23 +71,21 @@
 div.sharedaddy,
 #content div.sharedaddy,
 #main div.sharedaddy {
-    margin-top: 3rem;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
-div.sharedaddy h3.sd-title:before {
-    border: 0!important;
-    height: 0.1rem;  
-    background: -moz-linear-gradient(left, rgba(51,51,51,0.01) 0%, rgba(51,51,51,0.2) 10%, rgba(51,51,51,0.50) 50%, rgba(51,51,51,0.2) 90%, rgba(51,51,51,0.01) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(51,51,51,0.01)), color-stop(10%,rgba(51,51,51,0.2)), color-stop(50%,rgba(51,51,51,0.50)), color-stop(90%,rgba(51,51,51,0.2)), color-stop(100%,rgba(51,51,51,0.01))); /* Chrome,Safari4+ */
-    background:-webkit-linear-gradient(left, rgba(51,51,51,0.01) 0%,rgba(51,51,51,0.2) 10%,rgba(51,51,51,0.50) 50%,rgba(51,51,51,0.2) 90%,rgba(51,51,51,0.01) 100%);
-    background: -o-linear-gradient(left, rgba(51,51,51,0.01) 0%,rgba(51,51,51,0.2) 10%,rgba(51,51,51,0.50) 50%,rgba(51,51,51,0.2) 90%,rgba(51,51,51,0.01) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(51,51,51,0.01) 0%,rgba(51,51,51,0.2) 10%,rgba(51,51,51,0.50) 50%,rgba(51,51,51,0.2) 90%,rgba(51,51,51,0.01) 100%); /* IE10+ */
-    background: linear-gradient(left, rgba(51,51,51,0.01) 0%,rgba(51,51,51,0.2) 10%,rgba(51,51,51,0.50) 50%,rgba(51,51,51,0.2) 90%,rgba(51,51,51,0.01) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */    
-}
-div.sharedaddy h3.sd-title {
-    font-weight: normal!important;
-    font-size: 16px!important;
-    font-size: 1.6rem!important;
-}
 
+
+/* Related Posts */
+.div#jp-relatedposts{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    margin: 2rem auto;
+}
+div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:hover,
+div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:focus,
+div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:active {
+    text-decoration: none;
+}

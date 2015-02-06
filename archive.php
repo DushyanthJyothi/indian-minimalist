@@ -16,9 +16,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title"><?php
+			<header class="archive-header">
+				<h1 class="archive-title"><?php
 						if ( is_day() ) :
 							printf( __( 'Day: %s', 'indian_minimalist' ), '<span>' . get_the_date() . '</span>' );
 

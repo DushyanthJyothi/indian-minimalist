@@ -32,9 +32,6 @@ get_header(); ?>
 						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
 							_e( 'Videos', 'indian_minimalist' );
 
-						elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
-							_e( 'Audio', 'indian_minimalist' );
-
 						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
 							_e( 'Quotes', 'indian_minimalist' );
 
@@ -43,6 +40,12 @@ get_header(); ?>
 
 						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
 							_e( 'Galleries', 'indian_minimalist' );
+
+						elseif ( is_tax( 'post_format', 'post-format-status' ) ) :
+							_e( 'Status', 'indian_minimalist' );
+
+						elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
+							_e( 'Audios', 'indian_minimalist' );
 
 						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
 							_e( 'Chats', 'indian_minimalist' );

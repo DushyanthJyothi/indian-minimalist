@@ -51,7 +51,7 @@ get_header(); ?>
 					// Start the Loop.
 					while ( have_posts() ) : the_post();
 
-						get_template_part( 'content', get_post_format() );
+						indian_minimalist_get_post_titiles_only();
 
 					endwhile;
 					// Previous/next page navigation.
@@ -68,3 +68,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+
+
+
